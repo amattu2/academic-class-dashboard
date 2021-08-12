@@ -190,3 +190,100 @@ body {
 .content-ad {
   padding: 20px;
 }
+
+.upcoming-date {
+  padding: 5px;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.content-upcoming {
+  padding: 20px;
+}
+
+.upcoming-date .material-icons {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.upcoming-card {
+  margin-bottom: 5px;
+  background: #f0edfe;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.upcoming-card .card-content {
+  margin-right: auto;
+  color: #6367e9;
+}
+
+.upcoming-card .card-bar {
+  width: 6px;
+  height: 150px;
+  background: #6367e9;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.upcoming-card .card-image img {
+  border-radius: 6px;
+}
+
+.upcoming-card .card-image {
+  margin-right: 10px;
+}
+
+.upcoming-card .card-content-time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px;
+  user-select: none;
+}
+
+.upcoming-card .card-content-time .material-icons {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.upcoming-card .card-content-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.upcoming-card .card-difficulty {
+  margin-bottom: 100%;
+  border-radius: 50%;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px #ccc;
+  border: 2px solid rgb(99 103 233);
+  user-select: none;
+}
+
+.upcoming-card .card-icons {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+}
+
+.upcoming-card .card-goto {
+  margin-top: 100%;
+}
