@@ -88,27 +88,6 @@ body {
   color: #3b3b3b;
 }
 
-.ad-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #6367e9;
-  font-weight: bold;
-  position: absolute;
-  bottom: 25px;
-  width: 100%;
-  cursor: pointer;
-  user-select: none;
-}
-
-.ad-text span:first-of-type {
-  transition: all 0.1s ease;
-}
-
-.ad-text:hover span:first-of-type {
-  margin-right: 6px;
-}
-
 .menu-footer-ad {
   background: #fff;
   border-radius: 12px;
@@ -125,22 +104,89 @@ body {
     0 10px 1px -4px rgba(0, 0, 0, 0.15);
 }
 
-.ad-image {
+.menu-footer-ad .ad-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6367e9;
+  font-weight: bold;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-footer-ad .ad-text span:first-of-type {
+  transition: all 0.1s ease;
+}
+
+.menu-footer-ad .ad-text:hover span:first-of-type {
+  margin-right: 6px;
+}
+
+.menu-footer-ad .ad-image {
   margin-bottom: 10px;
   margin-top: -35px;
   text-align: center;
 }
 
-.ad-image img {
+.menu-footer-ad .ad-image img {
   border-radius: 5px;
 }
 
 .content-container {
   width: calc(100% - 270px);
   height: calc(100% - 56px);
-  background: #fff;
-  display: inline-block;
+  display: inline-flex;
   margin: 25px 0 25px 0;
   box-sizing: border-box;
+}
+
+.main-content {
+  padding: 30px;
+  display: inline-block;
+  background: #fff;
   border-radius: 30px;
+  width: 70%;
+}
+
+.content-ad .ad-text {
+  opacity: 0.6;
+}
+
+.content-ad h1,
+.content-ad p {
+  margin: 0;
+}
+
+.content-ad h1 {
+  line-height: 35px;
+}
+
+.content-ad .ad-title {
+  margin-bottom: 10px;
+}
+
+.content-ad .ad-button {
+  background: #6367e9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 11px;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.1s ease, color 0.1s ease;
+  margin-top: 10px;
+  width: 140px;
+}
+
+.ad-button span:first-of-type {
+  margin-right: auto;
+}
+
+.content-ad {
+  padding: 20px;
 }
