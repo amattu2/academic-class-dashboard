@@ -149,6 +149,7 @@ body {
   background: #fff;
   border-radius: 30px;
   width: 70%;
+  overflow: hidden;
 }
 
 .content-ad .ad-text {
@@ -189,6 +190,7 @@ body {
 
 .content-ad {
   padding: 20px;
+  max-width: 590px;
 }
 
 .upcoming-date {
@@ -205,6 +207,23 @@ body {
 
 .content-upcoming {
   padding: 20px;
+  max-height: 382px;
+  overflow-y: auto;
+}
+
+.content-upcoming::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.content-upcoming::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f2f2f2;
+}
+
+.content-upcoming::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #3b3b3b;
 }
 
 .upcoming-date .material-icons {
@@ -221,11 +240,17 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  color: #3b3b3b;
+  transition: color 0.1s ease;
+  cursor: pointer;
+}
+
+.upcoming-card:hover {
+  color: #6367e9;
 }
 
 .upcoming-card .card-content {
   margin-right: auto;
-  color: #6367e9;
 }
 
 .upcoming-card .card-bar {
@@ -264,17 +289,18 @@ body {
 }
 
 .upcoming-card .card-difficulty {
-  margin-bottom: 100%;
   border-radius: 50%;
   background: #fff;
+  color: #3b3b3b;
   width: 35px;
   height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 50px #ccc;
-  border: 2px solid rgb(99 103 233);
+  border: 2px solid #6367e9;
   user-select: none;
+  margin: 0 auto;
 }
 
 .upcoming-card .card-icons {
@@ -285,5 +311,29 @@ body {
 }
 
 .upcoming-card .card-goto {
-  margin-top: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 155px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.upcoming-card .card-goto span:first-of-type {
+  transition: margin 0.1s ease;
+}
+
+.upcoming-card:hover .card-goto span:first-of-type {
+  margin-right: 6px;
+}
+
+.secondary-content {
+  width: calc(100% - 70% - 60px);
+  margin-left: -20px;
+  z-index: -1;
+  padding-left: 20px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
 }
