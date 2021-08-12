@@ -12,6 +12,6 @@ document.querySelectorAll(".menu-button").forEach((button) => {
     });
 
     // Activate button
-    button.target.classList.add("active");
+    button.classList.add("active");
   };
 });
