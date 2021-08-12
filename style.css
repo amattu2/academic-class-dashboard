@@ -1,0 +1,146 @@
+/*
+  Produced 2019-2021
+  By https://amattu.com/links/github
+  Copy Alec M.
+  License GNU Affero General Public License v3.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  margin: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-bar {
+  padding: 20px 20px;
+  width: 255px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.menu-branding img {
+  -webkit-user-drag: none;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #9a9a9a;
+  border-radius: 11px;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.1s ease, color 0.1s ease;
+}
+
+.button-text {
+  margin-right: auto;
+  margin-left: 7px;
+}
+
+.menu-button.active {
+  background: #6367e9;
+  color: #fff;
+}
+
+.button-lead-icon .material-icons {
+  font-size: 18px;
+}
+
+.button-lead-icon,
+.button-post-icon {
+  line-height: 0px;
+}
+
+.button-post-icon {
+  visibility: hidden;
+}
+
+.menu-button.active .button-post-icon {
+  visibility: visible;
+}
+
+.menu-button-header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+.secondary .menu-button:not(.active) {
+  color: #3b3b3b;
+}
+
+.ad-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6367e9;
+  font-weight: bold;
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ad-text span:first-of-type {
+  transition: all 0.1s ease;
+}
+
+.ad-text:hover span:first-of-type {
+  margin-right: 6px;
+}
+
+.menu-footer-ad {
+  background: #fff;
+  border-radius: 12px;
+  width: 185px;
+  height: 165px;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.15),
+    0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0, 0, 0, 0.15);
+}
+
+.ad-image {
+  margin-bottom: 10px;
+  margin-top: -35px;
+  text-align: center;
+}
+
+.ad-image img {
+  border-radius: 5px;
+}
+
+.content-container {
+  width: calc(100% - 270px);
+  height: calc(100% - 56px);
+  background: #fff;
+  display: inline-block;
+  margin: 25px 0 25px 0;
+  box-sizing: border-box;
+  border-radius: 30px;
+}

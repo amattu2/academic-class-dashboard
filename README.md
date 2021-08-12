@@ -1,14 +1,11 @@
 # Introduction
-N/A
+This is a basic HTML/CSS implementation of a [Dribble.com](https://dribbble.com/shots/14138989-Skillalley-Dashboard-UI) mock-up.
 
-# Usage
-N/A
-
-# Notes
-N/A
-
-# Requirements & Dependencies
-N/A
+Original design author: https://dribbble.com/tranmautritam
 
 # Previews
-![preview image](https://via.placeholder.com/350x240)
+Original Dribble design:
+![preview image](https://cdn.dribbble.com/users/427857/screenshots/14138989/media/967cea57d73f144802cca96364e1e20f.png)
+
+Implementation:
+TBD
