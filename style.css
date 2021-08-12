@@ -189,6 +189,7 @@ body {
 
 .content-ad {
   padding: 20px;
+  max-width: 590px;
 }
 
 .upcoming-date {
@@ -226,6 +227,7 @@ body {
 .upcoming-card .card-content {
   margin-right: auto;
   color: #6367e9;
+  padding-bottom: 54px;
 }
 
 .upcoming-card .card-bar {
@@ -286,4 +288,12 @@ body {
 
 .upcoming-card .card-goto {
   margin-top: 100%;
+}
+
+.secondary-content {
+  width: calc(100% - 70% - 60px);
+  margin-left: -20px;
+  z-index: -1;
+  padding-left: 20px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
 }
